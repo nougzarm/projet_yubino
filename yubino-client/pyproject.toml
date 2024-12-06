@@ -1,0 +1,19 @@
+[project]
+name = "yubino"
+version = "0.0.2"
+authors = [
+  {name = "Vincent Ruello", email = "vincent.ruello@u-paris.fr"},
+]
+dependencies = [
+    "pyserial",
+    "requests",
+    "ecdsa",
+]
+
+[project.scripts]
+yubino = "yubino.main:main"
+
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
